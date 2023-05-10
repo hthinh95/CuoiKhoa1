@@ -72,13 +72,23 @@ button {
     }
 }
 
-.carousel-control {
-    max-width: 1200px;
+.carousel {
+    width: 100%;
     height: auto;
     position: relative;
 }
 
-.slide-text {
+.carousel img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-indicators {
+    text-align: center;
+}
+
+.carousel .slide-text {
     width: 100%;
     background-color: #4e4e4f;
     position: absolute;
@@ -140,4 +150,14 @@ footer {
 a {
     text-decoration: none;
     color: white;
+}
+
+@media only screen and (max-width: 1200px) {
+    .nav-item {
+        display: none;
+    }
+
+    .ads-quang img {
+        display: none;
+    }
 }
